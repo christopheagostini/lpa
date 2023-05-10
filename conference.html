@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>La Sécurité Informatique - 10 Mai 2023 - Christophe Agostini</title>
+
+		<meta name="description" content="Conférence du 10 Mai 2023">
+		<meta name="author" content="Chrisophe Agostini">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+				<section>
+					<h1>La Sécurité Informatique</h1>
+					<h3>Cellulaire et Réseaux sociaux: </h3>
+					<p>
+						<small>Présentation :  <a href="mailto:christophe.agostini@gmail.com">Christophe Agostini</a> </small><br> 
+						<small>13 Décembre 2022 </small>
+					</p>
+				</section>
+
+				<section>
+					<h3>Comment télécharger cette présentation</h3>
+					<img  data-src="./pictures/qrcode.png"   width="400" height="400"  alt="QR code">
+					<p><small>https://github.com/christopheagostini/lpa</small></p>
+				</section>
+				<aside class="notes">
+					Aucune note.
+				</aside>
+
+
+				<section >
+						<h2>Sommaire</h2>
+						<p class="fragment" style="text-align: left;">Présentation</p>
+						<p class="fragment" style="text-align: left;">Thème 1 : Introduction à la sécurité informatique</p>
+						<p class="fragment" style="text-align: left;">Thème 2 : Les mots de passe</p>
+						<p class="fragment" style="text-align: left;">Thème 3 : Les virus informatiques</p>
+						<p class="fragment" style="text-align: left;">Thème 4 : La protection des informations personnelles</p>
+						<p class="fragment" style="text-align: left;">Thème 5 : La sécurité en ligne</p>
+						<p class="fragment" style="text-align: left;">Conclusion</p>
+
+						<p class="fragment" style="text-align: left;">Conclusion : et vous ? </p>
+						<aside class="notes">
+							Aucun commentaire
+						</aside>
+					</section>
+
+					<section>
+						<h2>Présentation</h2>
+						<p class="fragment" style="text-align: left;">Christophe Agostini</p>
+						<p class="fragment" style="text-align: left;">Mon expertise</p>
+						<p class="fragment" style="text-align: left;">Rien à vendre</p>
+					</section>
+
+					<section>
+						<h1>Thème 1 : Introduction à la sécurité informatique</h1>
+					</section>
+
+					<section>
+						<h2>La sécurité informatique : Protégeons-nous ensemble !</h2>
+						<p class="fragment" style="text-align: left; color: Cyan; ">C'est quoi pour vous, la "sécurité" informatique ?</p>
+					<aside class="notes">
+						Aujourd'hui, nous allons parler de la sécurité informatique. Pour moi, c'est mon travail. Mais vous, savez-vous ce que cela signifie ? 
+						Cela concerne la protection de nos ordinateurs, de nos informations personnelles et de notre vie en ligne. Nous allons apprendre comment rester en sécurité et 
+						protéger nos données !"
+					</aside>
+					</section>
+
+
+					<section>
+						<h2>Qu'est-ce que la sécurité informatique ?</h2>
+						<p class="fragment" style="text-align: left;color: Cyan">Ensemble des moyens humains, organisationnels, juridiques et surtout techniques visant à empêcher l'utilisation des données <mark>sécurisées et ou confidentielles </mark> par un tiers non autorisé</p>
+					</section>
+					<aside class="notes">
+						Mais alors qu’est ce que la sécurité ? La sécurité informatique, autrement appelée sécurité des systèmes d’information (SSI), regroupe l’ensemble des moyens humains, organisationnels, juridiques et bien évidemment techniques utiles à l’interdiction de l’utilisation des données sécurisées par un tiers non autorisé.  En d’autres termes, il s’agit des moyens mis en place pour empêcher, interdire, poursuivre et punir un contrevenant éventuel.
+					</aside>
+
+					<section>
+						<h3>Petit jeu : </h3>
+						<p class="fragment" style="text-align: left;">Quel point en commun relie ces compagnies : </p>
+							<img class="fragment" width="200" height="100" data-src="./pictures/crypto.com-logo.png" alt="Crypto.com">
+							<img class="fragment" width="200" height="100" data-src="./pictures/microsoft.jpg" alt="Microsoft">
+							<img class="fragment" width="200" height="100" data-src="./pictures/new.png" alt="NewGroup">
+							<img class="fragment" width="200" height="100" data-src="./pictures/red-cross.jpg" alt="RedCross">
+							<img class="fragment" width="200" height="100" data-src="./pictures/uber.png" alt="Uber">
+							<img class="fragment" width="200" height="100" data-src="./pictures/plex.jpg" alt="Plex">
+							<img class="fragment" width="200" height="100" data-src="./pictures/rockstar.jpg" alt="Rockstar">
+							<img class="fragment" width="200" height="100" data-src="./pictures/twitter.png" alt="Twitter">
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h3>Réponse : </h3>
+						<p class="fragment" style="text-align: left;">Elles se sont toutes fait "hacker" (data breach) ... </p>
+						<p class="fragment" style="text-align: left;">... en 2022</p>
+						<p class="fragment" style="text-align: left;">Source : <a href="https://firewalltimes.com/biggest-data-breaches-2022/">FirewallTimes</a> et <a href="https://en.wikipedia.org/wiki/List_of_data_breaches">Wikipedia </a></p>
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+
+					<section>
+						<h3>Et en 2021 ... </h3>
+							<img class="fragment" width="667" height="480" data-src="./pictures/linkedin.png" alt="LinkedIn">
+						</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h3>Ou avant ... </h3>
+							<img class="fragment" data-src="./pictures/yahoo.png" alt="yahoo">
+						</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+
+					<section>
+						<h3>Et même chez nous ...</h3>
+							<img class="fragment" data-src="./pictures/desjardins.png" alt="desjardins">
+						</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h2>Donc mon travail : </h2>
+						<p class="fragment" style="text-align: left;"> Protéger mon client en imposant <mark>les normes les plus appropriées </mark> afin de limiter les risques</p>
+					</section>
+					<aside class="notes">
+						1- Le plus sécuritaire : aucun ordinateur
+						2- limiter ... mais pas les éliminer
+					</aside>
+
+
+ 
+					<section>
+						<h1>Thème 2 : Les mots de passe</h1>
+						<img class="fragment" data-src="./pictures/mots_de_passe.jpg" alt="virus">
+					</section>
+
+					<section>
+						<h2>Pourquoi les mots de passe sont importants ?</h2>
+						<p class="fragment" style="text-align: left; ">Pour limiter les accès de quelqu'un, encore faut-il savoir qui il est ...</p>
+					<aside class="notes">
+						Parler de la protection des informations personnelles
+					</aside>
+					</section>
+
+					<section>
+						<h2>Comment créer un mot de passe fort ? </h2>
+						<p class="fragment" style="text-align: left; ">Plus il y'a de lettres, de nombres et de caractères spéciaux ... mieux c'est </p>
+					<aside class="notes">
+						donner des conseils sur l'utilisation de combinaisons de lettres, de chiffres et de caractères spéciaux
+					</aside>
+					</section>
+
+					<section>
+						<h3>Concernant les mots de passe</h3>
+						<p class="fragment" style="text-align: left;">Il est préférable de : </p>
+						<p class="fragment" style="text-align: left;">- Ne pas réutiliser le même entre différents sites</p>
+						<p class="fragment" style="text-align: left;">- Changer de structure</p>
+						<p class="fragment" style="text-align: left;">- Ne pas penser uniquement à la régle de lettre majuscule, minuscule, chiffres ...</p>
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+
+					<section>
+						<h3>Testons la difficulté à hacker les mot de passe : </h3>
+						<p class="fragment" style="text-align: left;"><a href= "https://www.security.org/how-secure-is-my-password/"> How Secure is My Password</a></p>
+					</section>
+					<aside class="notes">
+						Montrer l'exemple de "bonjou" et "bonjour"
+					</aside>
+
+					<section>
+						<h3>Utiliser un gestionnaire de MDP : </h3>
+						<p class="fragment" style="text-align: left;"><a href= "https://www.pcmag.com/article2/0,2817,2475964,00.asp"> Vous en trouverez dans cet article</a></p>
+						<p class="fragment" style="text-align: left;"><a href= "https://keepass.info/"> Je vous recommande l'excellent Keepass</a></p>
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h2>Ne partagez pas vos mots de passe ! </h2>
+						<p class="fragment" style="text-align: left; ">Un mot de passe c'est comme une brosse à dent ...</p>
+						<img class="fragment" data-src="./pictures/one.jpg" alt="meme">
+					<aside class="notes">
+						
+					</aside>
+					</section>
+
+					<section>
+						<h1>Thème 3 : Les virus informatiques</h1>
+						<img class="fragment" data-src="./pictures/virus.jpg" alt="virus">
+					</section>
+
+					<section>
+						<h3>Concernant les virus : </h3>
+						<p class="fragment" style="text-align: left;">Qu'est-ce qu'un virus informatique ? </p>
+						<p class="fragment" style="text-align: left;">Comment les virus se propagent-ils ?</p>
+						<p class="fragment" style="text-align: left;">Comment se protéger des virus ?</p>
+						<p class="fragment" style="text-align: left;">Les nouveaux virus : les extensions de navigateurs</p>
+					<aside class="notes">
+						Qu'est-ce qu'un virus informatique ? (expliquer qu'il s'agit d'un programme nuisible)
+						Comment les virus se propagent-ils ? (parler des pièces jointes d'e-mails, des téléchargements non sécurisés, etc. / mentioner que les OS les plus utilisés sont les plus exposés)
+						Comment se protéger des virus ? (donner des conseils sur l'utilisation d'antivirus et de logiciels de sécurité)
+					</aside>
+				</section>
+					
+
+				<section>
+					<h1>Thème 4 : La protection des informations personnelles</h1>
+					<img class="fragment" data-src="./pictures/perso.jpg" alt="perso">
+				</section>
+
+
+				<section>
+					<h3>En ligne ou ailleurs : </h3>
+					<p class="fragment" style="text-align: left;">Pourquoi nos informations personnelles sont-elles importantes ? </p>
+					<p class="fragment" style="text-align: left;">Comment protéger nos informations personnelles ?</p>
+				<aside class="notes">
+					-parler de la vie privée et de l'identité en ligne
+					- expliquez l'importance de ne pas partager d'informations sensibles en ligne et de les garder sécurisées
+				</aside>
+			</section>
+				
+
+			<section>
+				<h1>Thème 5 : La sécurité en ligne</h1>
+				<img class="fragment" data-src="./pictures/enligne.jpg" alt="enligne">
+			</section>
+
+			<section>
+				<h3>Quand je suis sur internet </h3>
+				<p class="fragment" style="text-align: left;">Les règles de base pour rester en sécurité en ligne</p>
+				<p class="fragment" style="text-align: left;">Les réseaux sociaux et la sécurité </p>
+			<aside class="notes">
+				- parlez de ne pas parler aux étrangers en ligne, de ne pas cliquer sur des liens suspects, etc.
+				- expliquer les paramètres de confidentialité et l'importance de ne pas partager trop d'informations personnelles
+			</aside>
+		</section>
+
+		<section>
+			<h1>Conclusion</h1>
+			<img class="fragment" data-src="./pictures/vous.jpg" alt="à vous">
+		</section>
+
+
+		<section>
+			<h1>En bonus</h1>
+		</section>
+
+		<section>
+			<h3>Vous trouverez dans les prochaines diapositives du contenu additionel qui ne rentre pas dans notre 45 de présentation</h3>
+		</aside>
+	</section>
+
+
+
+					<section>
+						<h1>Votre cellulaire</h1>
+					</section>
+
+					<section>
+						<h3>La révolution du téléphone intelligent </h3>
+						<p class="fragment" style="text-align: left;">Un changement drastique de notre façon d'utiliser Internet</p>
+						<p class="fragment" style="text-align: left;">Une révolution technique populaire</p>
+						<p class="fragment" style="text-align: left;">Un marché en plein changement et pas forcément mature au début</p>
+					</section>
+					<aside class="notes">
+						Usurpation d’identité : c’est une sorte de fraude qui se traduit par la perte de données personnelles, telles que les mots de passe, les noms d'utilisateur, les informations bancaires ou les numéros de carte de crédit. On peut aussi utiliser d’autres données qui vous corresponde comme votre numéro d’assurance social, votre carte d’assurance maladie, etc...
+					</aside>
+
+
+					<section>
+						<h3>Une (r)évolution informatique</h3>
+						<img class="fragment" data-src="./pictures/mobile_usage.png" alt="Part des navigateurs mobile (IOS, ANDROID) sur internet">
+					</section>
+					<aside class="notes">
+						Source : https://www.broadbandsearch.net/blog/mobile-desktop-internet-usage-statistics
+					</aside>
+
+
+					
+					<section>
+						<h3>Autre statistiques </h3>
+						<p class="fragment" style="text-align: left;">Les téléphones intelligents représentent 80% de la navigation sur les réseaux sociaux</p>
+						<p class="fragment" style="text-align: left;">95,1% des utilisateurs de Facebook utilisent leur cellulaire pour accèder au service conte 86% pour Twitter et 60% pour LinkedIn</p>
+						<p class="fragment" style="text-align: left;">Source : <a href= "https://www.broadbandsearch.net/blog/mobile-desktop-internet-usage-statistics"> Broadbandsearch</a></p>
+					</section>
+					<aside class="notes">
+					</aside>
+
+					<section>
+						<h3>Deux catégories de téléphone intelligent</h3>
+						<p class="fragment" style="text-align: left;">Téléphone dit "fermé" : Apple Iphone</p>
+						<p class="fragment" style="text-align: left;">Téléphone dit "ouvert" : Android</p>
+					</section>
+					<aside class="notes">
+					</aside>
+
+					<section>
+						<h3>Part de marché</h3>
+						<img class="fragment" data-src="./pictures/android-ios.png" alt="Division OS mobiles">
+						<p class="fragment" style="text-align: left;">Source : <a href= "https://gs.statcounter.com/os-market-share/mobile/worldwide"> Statcounter</a></p>
+					</section>
+					<aside class="notes">
+						Source : https://gs.statcounter.com/os-market-share/mobile/worldwide
+					</aside>
+
+					<section>
+						<h3>Fraude générique</h3>
+						<p class="fragment" style="text-align: left;">Le sms type "erreur" auquel vous êtes invités à répondre</p>
+						<img class="fragment" width="633" height="420"  data-src="./pictures/sms_1.jpeg" alt="Exemple 1 de SMS">
+					</section>
+					<aside class="notes">sms_1.jpeg
+					</aside>
+
+					<section>
+						<h3>Fraude générique</h3>
+						<p class="fragment" style="text-align: left;">Le sms qui incite à cliquer sur un lien</p>
+						<img class="fragment" width="544" height="506"  data-src="./pictures/sms_2.png" alt="Exemple 2 de SMS">
+					</section>
+					<aside class="notes">sms_2.png
+					</aside>
+
+					<section>
+						<h3>Comprendre les domaines</h3>
+						<p class="fragment" style="text-align: left;">Pour éviter beaucoup d'erreur, il suffit de comprendre la base des noms de domaines</p>
+						<p class="fragment" style="text-align: left;">https://ouvert.canada.ca</p>
+						<p class="fragment" style="text-align: left;color: green">ouvert (sous domaine)</p>
+						<p class="fragment" style="text-align: left;color: blue">canada (domaine)</p>
+						<p class="fragment" style="text-align: left;color: gold">.ca (domaine de premier niveau)</p>
+						<p class="fragment" style="text-align: left;">Source : <a href= "https://apresta.fr/blog/mieux-comprendre-les-noms-de-domaines/"> Plus d'information ici</a></p>
+					</section>
+					<aside class="notes">https://apresta.fr/blog/mieux-comprendre-les-noms-de-domaines/
+					</aside>
+
+					<section>
+						<h3>Fraude générique</h3>
+						<p class="fragment" style="text-align: left;">Regardez à nouveau l'adresse : </p>
+						<img class="fragment" width="544" height="506"  data-src="./pictures/sms_2.png" alt="Exemple 2 de SMS">
+					</section>
+					<aside class="notes">sms_2.png
+					</aside>
+
+
+					<section>
+						<h3>Fraude générique</h3>
+						<p class="fragment" style="text-align: left;">Dernier exemple :  </p>
+						<img class="fragment" width="544" height="390"  data-src="./pictures/sms_3.jpg" alt="Exemple 3 de SMS">
+					</section>
+					<aside class="notes">sms_2.png
+					</aside>
+
+
+					<section>
+						<h3>Fraude générique</h3>
+						<p class="fragment" style="text-align: left;">Et toutes les raisons sont bonnes : <li class="fragment" style="text-align: center;">Connection suspecte sur Netflix</li><li class="fragment" style="text-align: center;">Le gouvernement du Québec et ses 500$</li><li class="fragment" style="text-align: center;">Etc ...</li></p>
+					</section>
+					<aside class="notes">sms_2.png
+					</aside>					
+
+					<section>
+						<h3>Article sur le sujet</h3>
+						<p class="fragment" style="text-align: left;">Excellent article de Radio canada sur le sujet de l'hameçonnage au Québec, avec notamment des témoignages de victimes, de fraudeurs et des méthodes employés</p>
+						<p class="fragment" style="text-align: left;">Source : <a href= "https://ici.radio-canada.ca/recit-numerique/4930/fraude-texto-hameconnage-vol-donnees-fraudeurs-montreal"> Radio Canada</a></p>
+					</section>
+					<aside class="notes">sms_2.png
+					</aside>			
+
+					<section>
+						<h3>Spécificité des téléphones Android</h3>
+						<p class="fragment" style="text-align: left;">Il est possible d'installer des applications qui ne viennent pas du "store"</p>
+						<img class="fragment" width="200" height="450"  data-src="./pictures/android_inconnue.jpg" alt="Android">
+					</section>
+					<aside class="notes">sms_2.png
+					</aside>		
+
+					
+					<section>
+						<h3>Spécificité des téléphones Android</h3>
+						<p class="fragment" style="text-align: left;">Si vous le faites soyez vigilant ... et attentif</p>
+						<img class="fragment" width="253" height="506"  data-src="./pictures/calculator-1.png" alt="Android">
+					</section>
+					<aside class="notes">sms_2.png
+					</aside>		
+
+					<section>
+						<h3>Spécificité des téléphones Android</h3>
+						<p class="fragment" style="text-align: left;">Y compris si l'application est déjà installé (téléphone douteux)</p>
+						<img class="fragment" width="253" height="506"  data-src="./pictures/calculator-2.jpg" alt="Android">
+					</section>
+					<aside class="notes">sms_2.png
+					</aside>		
+
+
+					
+					<section>
+						<h1>Les réseaux sociaux</h1>
+					</section>
+
+
+
+					<section>
+						<h3>Les risques sur les réseaux sociaux </h3>
+						<p class="fragment" style="text-align: left;">Usurpation d'identité</p>
+						<p class="fragment" style="text-align: left;">Publicité pour sites frauduleux</p>
+						<p class="fragment" style="text-align: left;">Contacts indésirables</p>
+						<p class="fragment" style="text-align: left;">Cyberharcèlement</p>
+					</section>
+					<aside class="notes">
+						Usurpation d’identité : c’est une sorte de fraude qui se traduit par la perte de données personnelles, telles que les mots de passe, les noms d'utilisateur, les informations bancaires ou les numéros de carte de crédit. On peut aussi utiliser d’autres données qui vous corresponde comme votre numéro d’assurance social, votre carte d’assurance maladie, etc...
+					</aside>
+
+					<section>
+						<h3>Mais connaissez-vous vos réseaux sociaux ? </h3>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+				</section>
+
+					<section>
+						<h3>Question : </h3>
+						<p class="fragment" style="text-align: left;">Qui possède un compte Facebook ?</p>
+						<p class="fragment" style="text-align: left;">Et google ?</p>
+						<p class="fragment" style="text-align: left;">Comment vivent les GAFA (-A)?</p>
+					</section>
+					<aside class="notes">
+						D'ou viennent leurs revenus ?
+					</aside>
+
+
+					<section>
+						<h3>Les revenus viennent :  </h3>
+						<p class="fragment" style="text-align: left;">1- De la publicité ciblée</p>
+						<p class="fragment" style="text-align: left;">2- De la publicité ciblée</p>
+						<p class="fragment" style="text-align: left;">3- De la publicité ciblée</p>
+						<p class="fragment" style="text-align: left;">4- Partenariat d'audimat ... pour de la publicité ciblée</p>
+						<p class="fragment" style="text-align: left;"> Source <a href= "https://www.businessinsider.com/how-facebook-makes-money-according-to-mark-zuckerberg-2018-4"> Business Inser</a> <a href= "https://www.investopedia.com/ask/answers/120114/how-does-facebook-fb-make-money.asp">, Investopedia </a> <a href= "https://hackernoon.com/how-does-google-earn-money-as-simple-as-that-60c5b399100e"> et Hackermoon</a></p>
+					</section>
+					<aside class="notes">
+						Anecdotes : 1- Gmail et 2- Google (recherche Arcade Montréal)
+					</aside>
+
+
+					<section>
+						<h3>Facebook veut donc </h3>
+						<p class="fragment" style="text-align: left;">- que vous regardiez ses pubs</p>
+						<p class="fragment" style="text-align: left;">- que vous accèdiez aux autres sites (articles, vidéos, etc.) via facebook</p>
+						<p class="fragment" style="text-align: left;">- que vos posts commentaires soient public (plus de réactions)</p>
+						<p class="fragment" style="text-align: left;">- obtenir le plus d'information sur vous afin de mieux vous cibler (nouvelles qui vous font réagir, etc.)</p>
+						</section>
+					<aside class="notes">
+						Le but : plus vous participez , plus les autres le voit, plus ils réagissent, etc.
+					</aside>
+
+
+					<section>
+						<h3>Et vous voulez probablement : </h3>
+						<p class="fragment" style="text-align: left;">- vous assurez que vos publications, vos photos ou vos documents personnel ne soient pas accessibles à tous</p>
+						<p class="fragment" style="text-align: left;">- de préférence ne pas vous faire suivre par facebook lors de vos naviguations en dehors du site</p>
+						</section>
+					<aside class="notes">
+						Mais est-ce le cas ?
+					</aside>
+
+
+					<section>
+						<h3>Les conseils : </h3>
+						<p class="fragment" style="text-align: left;">- NE PAS PUBLIER DE PHOTOS D’ENFANTS</p>
+						<p class="fragment" style="text-align: left;">- configurer les paramètres de confidentialités (capture d'écran)</p>
+						<p class="fragment" style="text-align: left;">- Plugin pour bloquer les mouchards facebook</p>
+						<p class="fragment" style="text-align: left;">- N'oubliez pas que ce que vous mettez en ligne ... est en ligne</p>
+						</section>
+					<aside class="notes">
+						Que vous soyez sur facebook soit, mais votre enfant ? Laissez lui le choix
+					</aside>
+
+					<section>
+						<h3>Facebook -  paramétres </h3>
+					<img class="fragment" data-src="./pictures/facebook_sec_1.png" alt="Facebook Sec 1">
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h3>Facebook - sécurité </h3>
+					<img class="fragment" data-src="./pictures/facebook_sec_2.png" alt="Facebook Sec 2">
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h3>Facebook - menu déroulant </h3>
+					<img class="fragment" data-src="./pictures/facebook_sec_3.png" alt="Facebook Sec 3">
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h3>Exemple de mouchard </h3>
+					<img class="fragment" data-src="./pictures/facebook_sec_4.png" alt="Facebook Sec 4">
+					<p class="fragment" style="text-align: left;">Utilisez un plugin logiciel comme "FaceBook Container" <a href= "https://mashable.com/2018/03/27/mozilla-firefox-facebook-anti-tracking-extension-browser-privacy/#2CuuigYYFPqc"> developpé par Mozilla</a> </p>
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h3>Publicité sur Facebook</h3>
+					<img class="fragment" data-src="./pictures/pub_facebook.jpg"  width="302" height="420" alt="Facebook Publicité 1">
+					<p class="fragment" style="text-align: left;">Encore une fois, remarquez l'adresse (aka URL)</p>
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h3>Publicité sur Facebook</h3>
+						<img class="fragment" data-src="./pictures/pub_2.png"  width="780" height="420" alt="Facebook Publicité 2">
+					<p class="fragment" style="text-align: center;"><a href="https://www.scam-detector.com/validator/">Source : scam-detector.com</a></p>
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h3>Publicité sur Facebook</h3>
+						<img  data-src="./pictures/saga_1.jpeg"   width="321" height="660"  alt="Facebook Publicité 3">
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h3>Publicité sur Facebook</h3>
+						<img  data-src="./pictures/saga_2.jpeg"   width="321" height="660"  alt="Facebook Publicité 4">
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h3>Publicité sur Facebook</h3>
+						<img  data-src="./pictures/saga_3.jpeg"   width="321" height="660"  alt="Facebook Publicité 5">
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h3>Publicité sur Facebook</h3>
+						<img  data-src="./pictures/saga_4.jpeg"   width="321" height="660"  alt="Facebook Publicité 6">
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h3>Publicité sur Facebook</h3>
+						<img  data-src="./pictures/saga_5.jpeg"   width="321" height="660"  alt="Facebook Publicité 7">
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h3>Publicité sur Facebook</h3>
+						<img  data-src="./pictures/worldz.png"   width="1284" height="660"  alt="Facebook Publicité 7">
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+
+
+					<section>
+						<h3>Mais il n'y'a pas que du négatif avec les RS</h3>
+						<p class="fragment" style="text-align: left;">- Ils permettent de communiquer facilement avec les gens</p>
+						<p class="fragment" style="text-align: left;">- Promotion du transfert de connaissance</p>
+						<p class="fragment" style="text-align: left;">- Facilitent la communication pour les gens anxieux </p>
+						<p class="fragment" style="text-align: left;">- Et surtout , ils permettent le SSO ce qui renforce la sécurité</p>
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h3>Le Single Sign On (SSO) </h3>
+						<p class="fragment" style="text-align: left;">Principe de base</p>
+						<p class="fragment" style="text-align: left;">À utiliser le plus souvent possible</p>
+						<p class="fragment" style="text-align: left;">En complément d'un mot de passe fort et de MFA, cela diminue les risques d'usurpation d'identité</p>
+						<p class="fragment" style="text-align: left;">Vous l'avez peut-être vu avec les sites gouvernemetaux (ex : celui de l'agence du revenu du Canada)</p>
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h3>Exemple de SSO</h3>
+					<img class="fragment" data-src="./pictures/sso.png" alt="SSO">
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+
+					<section>
+						<h3>MFA et Facebook</h3>
+						<img  data-src="./pictures/facebook_mfa.png"   width="1111" height="580"  alt="Facebook MFA">
+					</section>
+					<aside class="notes">
+						Aucune note.
+					</aside>
+
+					<section>
+						<h3>En ce qui concerne Google : </h3>
+						<p class="fragment" style="text-align: left;">- Utilisez les moteurs de recherche comme DuckDuckGo, Qwant ou StartPage</p>
+						<p class="fragment" style="text-align: left;">- Utilisez des alternatives comme ProtonMail qui offre des versions gratuites convenables</p>
+						<p class="fragment" style="text-align: left;">- Même Microsoft s'est moqué de Gmail</p>
+						</section>
+					<aside class="notes">
+						Même si il faut payer pour obtenir toutesles équivalences
+					</aside>
+
+
+
+					<section>
+						<h3>Des questions ?</h3>
+					</section>
+					<aside class="notes">
+
+					</aside>
+
+
+					<section>
+						<h3>Merci de votre participation !</h3>
+					</section>
+					<aside class="notes">
+
+					</aside>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
